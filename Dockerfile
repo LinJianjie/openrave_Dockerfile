@@ -24,7 +24,7 @@ RUN apt -y update && \
 
 
 
-RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py && python2 get-pip.py \
+RUN curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py && python2 get-pip.py &&\
     pip install ipython h5py numpy scipy wheel pyopengl
 
 RUN mkdir -p ~/git  && \
